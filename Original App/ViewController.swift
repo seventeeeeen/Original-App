@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet var atolabel: UILabel!
     @IBOutlet var nichilabel: UILabel!
     
+    
+    
     var saveData: UserDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
