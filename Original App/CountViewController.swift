@@ -48,6 +48,7 @@ class CountViewController: UIViewController {
 
 }
     
+    
     @IBAction func plus(){
     number = number + 1
     dayLabel.text = String(number)
