@@ -24,11 +24,13 @@ class CountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        eventLabel = saveData.object(forKey: "event") as? UILabel
-        dayLabel = saveData.object(forKey: "dayr") as! UILabel
-        contentTextView.text = saveData.object(forKey: "content") as? String
-
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        eventLabel = saveData.object(forKey: "event") as? UILabel
+        dayLabel = saveData.object(forKey: "day") as? UILabel
+        contentTextView.text = saveData.object(forKey: "content") as? String
     }
     
     
@@ -50,14 +52,15 @@ class CountViewController: UIViewController {
 
 }
     
-    
-func plus(){
+func viewDidAppear(_ animated: Bool){
+    func plus(){
     number = number + 1
     dayLabel.text = String(number)
     }
         
-func minus(){
+    func minus(){
         number = number - 1
-        dayLabel.text = String(number)
+    dayLabel.text = String(number)
     }
-
+    
+}
