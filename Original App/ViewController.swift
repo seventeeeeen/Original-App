@@ -53,6 +53,9 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func backBtnAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
 
 }

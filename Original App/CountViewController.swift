@@ -24,16 +24,18 @@ class CountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        eventLabel = saveData.object(forKey: "event") as? UILabel
+        dayLabel = saveData.object(forKey: "dayr") as! UILabel
         contentTextView.text = saveData.object(forKey: "content") as? String
 
         // Do any additional setup after loading the view.
     }
     
     
-    @IBAction func saveMemo(){
+    //@IBAction func saveMemo(){
         
         //UserDefaultsに書き込み
-        saveData.set(contentTextView.text, forKey: "content")
+        //saveData.set(contentTextView.text, forKey: "content")
     
 
     /*
@@ -49,13 +51,13 @@ class CountViewController: UIViewController {
 }
     
     
-    @IBAction func plus(){
+func plus(){
     number = number + 1
     dayLabel.text = String(number)
     }
         
-    @IBAction func minus(){
+func minus(){
         number = number - 1
         dayLabel.text = String(number)
     }
-}
+
