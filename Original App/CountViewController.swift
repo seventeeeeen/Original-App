@@ -51,10 +51,10 @@ class CountViewController: UIViewController {
     @IBAction func plus(){
     number = number + 1
     dayLabel.text = String(number)
+    }
         
     @IBAction func minus(){
         number = number - 1
         dayLabel.text = String(number)
-}
-}
+    }
 }
