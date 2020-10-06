@@ -12,11 +12,10 @@ class CountViewController: UIViewController {
     
     @IBOutlet var contentTextView: UITextView!
     @IBOutlet var eventLabel: UILabel!
-    eventTextField.text = saveData.object(forKey: "event")
-    
     @IBOutlet var changeLabel: UILabel!
     
-    var number: Int = 0
+    var number1: Int = 0
+    var number2: Int = dayLabel = saveData.object(forKey: "day")
     @IBOutlet var dayLabel: UILabel!
     @IBOutlet var nichiLabel: UILabel!
     
@@ -54,12 +53,13 @@ class CountViewController: UIViewController {
 
 }
     
-@IBAction func plus()
-number = number + 1
-dayLabel.text = String(number)
+@IBAction func plus(){
+ number = number + 1
+ dayLabel.text = String(number1)
 }
         
 @IBAction func minus(){
-number = number - 1
-dayLabel.text = String(number)
-    }
+ number = number2 - 1
+ dayLabel.text = String(number2)
+    
+}
