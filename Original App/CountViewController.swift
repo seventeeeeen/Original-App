@@ -10,11 +10,12 @@ import UIKit
 
 class CountViewController: UIViewController {
     
-    var number: Int = 0
-    
     @IBOutlet var contentTextView: UITextView!
     @IBOutlet var eventLabel: UILabel!
     @IBOutlet var changeLabel: UILabel!
+    
+    var number: Int = 0
+    
     @IBOutlet var dayLabel: UILabel!
     @IBOutlet var nichiLabel: UILabel!
     
@@ -52,15 +53,12 @@ class CountViewController: UIViewController {
 
 }
     
-func viewDidAppear(_ animated: Bool){
-    func plus(){
+@IBAction func plus()
     number = number + 1
     dayLabel.text = String(number)
-    }
+}
         
-    func minus(){
-        number = number - 1
+@IBAction func minus(){
+    number = number - 1
     dayLabel.text = String(number)
     }
-    
-}
