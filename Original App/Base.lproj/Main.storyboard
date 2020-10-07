@@ -89,11 +89,12 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEi-j0-bGb">
-                                <rect key="frame" x="151" y="672" width="113" height="74"/>
+                                <rect key="frame" x="88" y="672" width="92" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.63289636370000002" green="0.86908739810000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="minus" destination="lh8-Q1-uZY" eventType="touchUpInside" id="a1A-6g-xgT"/>
                                     <action selector="plus" destination="lh8-Q1-uZY" eventType="touchUpInside" id="nLS-37-Hdf"/>
                                 </connections>
                             </button>
@@ -111,6 +112,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExT-2a-eEW">
+                                <rect key="frame" x="245" y="672" width="92" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.63289636370000002" green="0.86908739810000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="minus" destination="lh8-Q1-uZY" eventType="touchUpInside" id="0Cn-hv-S0E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qaS-Ce-8i2"/>
@@ -214,9 +225,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="saveMemo" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fmt-lB-yOo"/>
-                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9O7-mn-XcK">
                                 <rect key="frame" x="43" y="572" width="322" height="172"/>
@@ -233,6 +241,7 @@
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="backBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fEh-3c-ULQ"/>
+                                    <action selector="saveMemo" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0r-HW-V9G"/>
                                 </connections>
                             </button>
                         </subviews>

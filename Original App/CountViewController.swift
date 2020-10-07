@@ -15,7 +15,8 @@ class CountViewController: UIViewController {
     @IBOutlet var changeLabel: UILabel!
     
     var number1: Int = 0
-    var number2: Int = dayLabel = saveData.object(forKey: "day")
+    var number2: Int = saveData.object(forKey: "day") 
+    
     @IBOutlet var dayLabel: UILabel!
     @IBOutlet var nichiLabel: UILabel!
     
@@ -29,8 +30,8 @@ class CountViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        eventLabel = saveData.object(forKey: "event") as? UILabel
-        dayLabel = saveData.object(forKey: "day") as? UILabel
+        eventLabel.text = saveData.object(forKey: "event") as? String
+        dayLabel.text = saveData.object(forKey: "day") as? String
         contentTextView.text = saveData.object(forKey: "content") as? String
     }
     
@@ -50,16 +51,15 @@ class CountViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
     
 @IBAction func plus(){
- number = number + 1
+ number1 = number1 + 1
  dayLabel.text = String(number1)
 }
         
 @IBAction func minus(){
- number = number2 - 1
+ number2 = number2 - 1
  dayLabel.text = String(number2)
     
+}
 }

@@ -30,14 +30,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func saveMemo(){
-        
-        //UserDefaultsに書き込み
-        saveData.set(contentTextView.text, forKey: "content")
-        saveData.set(eventTextField.text, forKey: "event")
-        saveData.set(dayTextField.text, forKey: "day")
-    }
-    
     @IBAction func swich() {
         if Aswitch.isOn {
             atolabel.isHidden = false
@@ -48,7 +40,6 @@ class ViewController: UIViewController {
             atolabel.isHidden = true
             dayTextField.isHidden = true
             nichilabel.isHidden = true
-            
         }
         
     }
@@ -56,7 +47,13 @@ class ViewController: UIViewController {
     @IBAction func backBtnAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-
-
+    
+    @IBAction func saveMemo(){
+           //UserDefaultsに書き込み
+           saveData.set(contentTextView.text, forKey: "content")
+           saveData.set(eventTextField.text, forKey: "event")
+           saveData.set(dayTextField.text, forKey: "day")
+       }
+    
 }
 
