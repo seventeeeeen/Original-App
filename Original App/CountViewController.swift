@@ -10,17 +10,19 @@ import UIKit
 
 class CountViewController: UIViewController {
     
+    var saveData: UserDefaults = UserDefaults.standard
+    
     @IBOutlet var contentTextView: UITextView!
     @IBOutlet var eventLabel: UILabel!
     @IBOutlet var changeLabel: UILabel!
+    @IBOutlet var dayLabel: UILabel!
     
     var number1: Int = 0
-    var number2: Int = saveData.object(forKey: "day") 
+    var number2: Int = 0
     
-    @IBOutlet var dayLabel: UILabel!
     @IBOutlet var nichiLabel: UILabel!
-    
-    var saveData: UserDefaults = UserDefaults.standard
+    @IBOutlet var plusbutton: UIButton!
+    @IBOutlet var minusbutton: UIButton!
 
 
     override func viewDidLoad() {
@@ -33,8 +35,9 @@ class CountViewController: UIViewController {
         eventLabel.text = saveData.object(forKey: "event") as? String
         dayLabel.text = saveData.object(forKey: "day") as? String
         contentTextView.text = saveData.object(forKey: "content") as? String
+        
+        number2 = saveData.object(forKey: "day") as! Int
     }
-    
     
     //@IBAction func saveMemo(){
         

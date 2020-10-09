@@ -95,7 +95,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="plus" destination="lh8-Q1-uZY" eventType="touchUpInside" id="nLS-37-Hdf"/>
+                                    <action selector="plus" destination="lh8-Q1-uZY" eventType="touchUpInside" id="8ij-6q-CJW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBd-Z1-YUN">
@@ -119,7 +119,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="-"/>
                                 <connections>
-                                    <action selector="minus" destination="lh8-Q1-uZY" eventType="touchUpInside" id="0Cn-hv-S0E"/>
+                                    <action selector="minus" destination="lh8-Q1-uZY" eventType="touchUpInside" id="ts8-c6-GBq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -132,7 +132,9 @@
                         <outlet property="contentTextView" destination="LTh-VK-jLd" id="3Ea-Zt-gDf"/>
                         <outlet property="dayLabel" destination="ic3-F3-Oxp" id="2cz-tU-tlR"/>
                         <outlet property="eventLabel" destination="Xt3-n7-ZFR" id="OyO-s9-jII"/>
+                        <outlet property="minusbutton" destination="ExT-2a-eEW" id="Bbu-QX-z4T"/>
                         <outlet property="nichiLabel" destination="vBd-Z1-YUN" id="77A-dQ-w80"/>
+                        <outlet property="plusbutton" destination="qEi-j0-bGb" id="vaZ-W0-SeE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lqw-9U-NKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
