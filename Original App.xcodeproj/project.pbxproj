@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1AAB50253149F5001426DD /* rent.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1AAB4F253149F5001426DD /* rent.png */; };
 		BF54D0E8250DB3D300A36294 /* CountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF54D0E7250DB3D300A36294 /* CountViewController.swift */; };
 		BF54D0EA250DB40900A36294 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF54D0E9250DB40800A36294 /* TimerViewController.swift */; };
-		BF54D0EC250DC5EE00A36294 /* sushi.png in Resources */ = {isa = PBXBuildFile; fileRef = BF54D0EB250DC5EE00A36294 /* sushi.png */; };
 		BFF79E0824FB854400973E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF79E0724FB854400973E9D /* AppDelegate.swift */; };
 		BFF79E0A24FB854400973E9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF79E0924FB854400973E9D /* SceneDelegate.swift */; };
 		BFF79E0C24FB854400973E9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF79E0B24FB854400973E9D /* ViewController.swift */; };
@@ -38,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF1AAB4F253149F5001426DD /* rent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rent.png; sourceTree = "<group>"; };
 		BF54D0E7250DB3D300A36294 /* CountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
 		BF54D0E9250DB40800A36294 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = ../../TimerViewController.swift; sourceTree = "<group>"; };
-		BF54D0EB250DC5EE00A36294 /* sushi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sushi.png; sourceTree = "<group>"; };
 		BFF79E0424FB854400973E9D /* Original App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Original App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF79E0724FB854400973E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFF79E0924FB854400973E9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 				BFF79E0924FB854400973E9D /* SceneDelegate.swift */,
 				BFF79E0B24FB854400973E9D /* ViewController.swift */,
 				BFF79E0D24FB854400973E9D /* Main.storyboard */,
-				BF54D0EB250DC5EE00A36294 /* sushi.png */,
+				BF1AAB4F253149F5001426DD /* rent.png */,
 				BF54D0E9250DB40800A36294 /* TimerViewController.swift */,
 				BF54D0E7250DB3D300A36294 /* CountViewController.swift */,
 				BFF79E1024FB854600973E9D /* Assets.xcassets */,
@@ -241,7 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF54D0EC250DC5EE00A36294 /* sushi.png in Resources */,
+				BF1AAB50253149F5001426DD /* rent.png in Resources */,
 				BFF79E1424FB854600973E9D /* LaunchScreen.storyboard in Resources */,
 				BFF79E1124FB854600973E9D /* Assets.xcassets in Resources */,
 				BFF79E0F24FB854400973E9D /* Main.storyboard in Resources */,
