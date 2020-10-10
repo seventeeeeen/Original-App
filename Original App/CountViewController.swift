@@ -24,7 +24,6 @@ class CountViewController: UIViewController {
     @IBOutlet var plusbutton: UIButton!
     @IBOutlet var minusbutton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
