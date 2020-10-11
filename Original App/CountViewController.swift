@@ -40,34 +40,43 @@ class CountViewController: UIViewController {
             
             number2 = Int(saveData.object(forKey: "day") as! String)!
             
+            if saveData.object(forKey: "switch") as! Int == 1{
+                changeLabel.text = "まで"
+            } else {
+                changeLabel.text = "からrr"
+            }
+            
         } else {
-        }
-        
-        //@IBAction func saveMemo(){
-        
-        //UserDefaultsに書き込み
-        //saveData.set(contentTextView.text, forKey: "content")
-        
-        
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-         }
-         */
-        
-        func plus(){
-            number1 = number1 + 1
-            dayLabel.text = String(number1)
-        }
-        
-        func minus(){
-            number2 = number2 - 1
-            dayLabel.text = String(number2)
             
         }
+    }
+    
+    
+    
+    //@IBAction func saveMemo(){
+    
+    //UserDefaultsに書き込み
+    //saveData.set(contentTextView.text, forKey: "content")
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before っrnavigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    @IBAction func plus(){
+        number1 = number1 + 1
+        dayLabel.text = String(number1)
+    }
+    
+    @IBAction func minus(){
+        number2 = number2 - 1
+        dayLabel.text = String(number2)
+        
     }
 }
